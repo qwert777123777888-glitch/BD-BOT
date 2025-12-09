@@ -47,33 +47,35 @@ SAVE_LOCK = threading.Lock()
 AUTO_SAVE_INTERVAL = 300  # 5 минут
 
 # Настройка логирования
+# --- LOGGING & DATA LOADING (SIMPLE LOGIC) ---
+# Настройка логирования
 logging.basicConfig(
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    level=logging.INFO
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    level=logging.INFO
 )
 logger = logging.getLogger(__name__)
 
 # Загрузка всех данных
-with open(os.path.join(DATA_DIR, 'classes.json'), 'r', encoding='utf-8') as f:
-    CLASSES = json.load(f)
-with open(os.path.join(DATA_DIR, 'locations.json'), 'r', encoding='utf-8') as f:
-    LOCATIONS = json.load(f)
-with open(os.path.join(DATA_DIR, 'enemies.json'), 'r', encoding='utf-8') as f:
-    ENEMIES = json.load(f)
-with open(os.path.join(DATA_DIR, 'bosses.json'), 'r', encoding='utf-8') as f:
-    BOSSES = json.load(f)
-with open(os.path.join(DATA_DIR, 'quests.json'), 'r', encoding='utf-8') as f:
-    QUESTS = json.load(f)
-with open(os.path.join(DATA_DIR, 'items.json'), 'r', encoding='utf-8') as f:
-    ITEMS = json.load(f)
-with open(os.path.join(DATA_DIR, 'special_actions.json'), 'r', encoding='utf-8') as f:
-    SPECIAL_ACTIONS = json.load(f)
-with open(os.path.join(DATA_DIR, 'story.json'), 'r', encoding='utf-8') as f:
-    STORY = json.load(f)
-with open(os.path.join(DATA_DIR, 'random_events.json'), 'r', encoding='utf-8') as f:
-    RANDOM_EVENTS = json.load(f)
-with open(os.path.join(DATA_DIR, 'abilities.json'), 'r', encoding='utf-8') as f:
-    ABILITIES = json.load(f)
+with open('classes.json', 'r', encoding='utf-8') as f:
+    CLASSES = json.load(f)
+with open('locations.json', 'r', encoding='utf-8') as f:
+    LOCATIONS = json.load(f)
+with open('enemies.json', 'r', encoding='utf-8') as f:
+    ENEMIES = json.load(f)
+with open('bosses.json', 'r', encoding='utf-8') as f:
+    BOSSES = json.load(f)
+with open('quests.json', 'r', encoding='utf-8') as f:
+    QUESTS = json.load(f)
+with open('items.json', 'r', encoding='utf-8') as f:
+    ITEMS = json.load(f)
+with open('special_actions.json', 'r', encoding='utf-8') as f:
+    SPECIAL_ACTIONS = json.load(f)
+with open('story.json', 'r', encoding='utf-8') as f:
+    STORY = json.load(f)
+with open('random_events.json', 'r', encoding='utf-8') as f:
+    RANDOM_EVENTS = json.load(f)
+with open('abilities.json', 'r', encoding='utf-8') as f:
+    ABILITIES = json.load(f)
 
 player_states = {}
 
@@ -1879,3 +1881,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
