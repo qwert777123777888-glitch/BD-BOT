@@ -1,0 +1,22 @@
+{
+  "name": "telegram-rpg-bot",
+  "description": "RPG Telegram Game Bot",
+  "keywords": ["telegram", "bot", "rpg", "game"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Telegram Bot Token from @BotFather",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}

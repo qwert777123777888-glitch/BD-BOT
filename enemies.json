@@ -1,0 +1,34 @@
+{
+    "wolf": {
+        "name": "Серый Волк",
+        "health": 40,
+        "attack": 8,
+        "experience": 20,
+        "image": "https://i.imgur.com/9vOMVqL.png",
+        "resistances": {"ice": 0.2, "fire": -0.2}
+    },
+    "bear": {
+        "name": "Медведь",
+        "health": 90,
+        "attack": 15,
+        "experience": 50,
+        "image": "https://i.imgur.com/9vOMVqL.png",
+        "resistances": {"physical": 0.2}
+    },
+    "bandit": {
+        "name": "Гладиатор-отступник",
+        "health": 120,
+        "attack": 12,
+        "experience": 80,
+        "image": "https://i.imgur.com/yZ5jK7b.jpeg",
+        "resistances": {"physical": 0.1, "poison": 0.5}
+    },
+    "skeleton": {
+        "name": "Скелет",
+        "health": 60,
+        "attack": 18,
+        "experience": 40,
+        "image": "https://i.imgur.com/w3f2a8c.jpeg",
+        "resistances": {"physical": -0.2, "poison": 1.0, "fire": -0.5, "light": -1.0}
+    }
+}

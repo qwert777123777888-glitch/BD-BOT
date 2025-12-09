@@ -1,0 +1,63 @@
+{
+    "village_storyline": [
+        {
+            "id": "village_start",
+            "type": "dialogue",
+            "title": "Тревожные вести",
+            "text": "Старейшина смотрит на вас с надеждой: 'Волки совсем обнаглели. Их вожак, Альфа, терроризирует наши стада. Если ты убьешь его, я дам тебе рекомендательное письмо в Столицу'.",
+            "next_scene": "village_fight_intro"
+        },
+        {
+            "id": "village_fight_intro",
+            "type": "dialogue",
+            "title": "Логово Зверя",
+            "text": "Вы находите логово Альфа-Волка в глубине леса. Глаза зверя горят красным огнем.",
+            "next_scene": "village_boss_fight"
+        },
+        {
+            "id": "village_boss_fight",
+            "type": "battle",
+            "text": "Огромный волк бросается на вас!",
+            "enemy": "alpha_wolf",
+            "next_scene": "village_aftermath"
+        },
+        {
+            "id": "village_aftermath",
+            "type": "location",
+            "text": "Вы приносите шкуру волка Старейшине. 'Ты настоящий герой!' - говорит он и вручает вам печать. Путь в столицу открыт!",
+            "target": "village_square",
+            "unlock_city": "capital_city",
+            "rewards": {"experience": 100, "gold": 50}
+        }
+    ],
+    "capital_storyline": [
+        {
+            "id": "capital_start",
+            "type": "dialogue",
+            "title": "Аудиенция",
+            "text": "Стража пропускает вас во дворец. Король выглядит обеспокоенным. 'В катакомбах под городом пробудилось древнее зло. Скелеты нападают на горожан'.",
+            "next_scene": "capital_dungeon"
+        },
+        {
+            "id": "capital_dungeon",
+            "type": "dialogue",
+            "title": "Катакомбы",
+            "text": "Спустившись вниз, вы видите трон из костей. На нем восседает Король Скелетов.",
+            "next_scene": "capital_boss_fight"
+        },
+        {
+            "id": "capital_boss_fight",
+            "type": "battle",
+            "text": "Король Скелетов поднимает свой меч!",
+            "enemy": "skeleton_king",
+            "next_scene": "capital_victory"
+        },
+        {
+            "id": "capital_victory",
+            "type": "location",
+            "text": "Король лично награждает вас медалью за отвагу. Вы стали легендой этого королевства! (Конец текущей демо-версии)",
+            "target": "capital_city",
+            "rewards": {"experience": 500, "gold": 1000, "items": ["royal_amulet"]}
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "alpha_wolf": {
+        "name": "Альфа Волк",
+        "health": 200,
+        "attack": 12,
+        "experience": 150,
+        "image": "https://i.imgur.com/9vOMVqL.png",
+        "is_boss": true,
+        "resistances": {"physical": 0.1, "ice": 0.3, "fire": -0.3}
+    },
+    "orc_boss": {
+        "name": "Орк-Крушитель",
+        "health": 300,
+        "attack": 20,
+        "experience": 300,
+        "image": "https://i.imgur.com/yZ5jK7b.jpeg",
+        "is_boss": true,
+        "resistances": {"physical": 0.3, "poison": 0.2}
+    },
+    "skeleton_king": {
+        "name": "Король Скелетов",
+        "health": 400,
+        "attack": 25,
+        "experience": 1000,
+        "image": "https://i.imgur.com/w3f2a8c.jpeg",
+        "is_boss": true,
+        "resistances": {"physical": 0.2, "poison": 1.0, "ice": 0.5, "light": -0.5},
+        "phases": [
+            {
+                "name": "Король-Лич (Восставший)",
+                "health": 300,
+                "attack": 35,
+                "image": "https://i.imgur.com/2eQp2x1.png",
+                "message": "Король Скелетов сбрасывает броню, и его кости загораются синим пламенем! 'ГЛУПЦЫ! ВАМ НЕ ПОБЕДИТЬ СМЕРТЬ!'",
+                "resistances": {"fire": 0.5, "physical": 0.5, "light": -0.2}
+            }
+        ]
+    }
+}

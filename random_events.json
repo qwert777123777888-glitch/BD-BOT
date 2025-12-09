@@ -1,0 +1,90 @@
+
+{
+    "village_small_events": [
+        {
+            "name": "Охота на волков",
+            "type": "chain",
+            "fatigue_cost": 10,
+            "scenes": [
+                {
+                    "type": "battle",
+                    "text": "Вы углубляетесь в лес и находите одинокого волка.",
+                    "enemy": "wolf"
+                }
+            ]
+        },
+        {
+            "name": "Заблудившийся торговец",
+            "type": "reward",
+            "description": "Торговец благодарит вас за указание дороги.",
+            "fatigue_cost": 5,
+            "rewards": {"gold": 15, "experience": 5}
+        },
+        {
+            "name": "Схрон разбойников",
+            "type": "reward",
+            "description": "Вы нашли тайник в дупле дерева!",
+            "fatigue_cost": 15,
+            "rewards": {"gold": 40, "items": ["health_potion_small"]}
+        }
+    ],
+    "village_medium_events": [
+        {
+            "name": "Нападение Медведя",
+            "type": "chain",
+            "fatigue_cost": 20,
+            "scenes": [
+                {
+                    "type": "battle",
+                    "text": "Огромный медведь преграждает вам путь!",
+                    "enemy": "bear"
+                },
+                {
+                    "type": "reward",
+                    "text": "В берлоге медведя нашлось кое-что ценное.",
+                    "rewards": {"gold": 50, "experience": 60}
+                }
+            ]
+        }
+    ],
+    "capital_small_events": [
+        {
+            "name": "Уличная драка",
+            "type": "chain",
+            "fatigue_cost": 10,
+            "scenes": [
+                {
+                    "type": "battle",
+                    "text": "Пьяный дебошир нападает на вас в переулке!",
+                    "enemy": "bandit"
+                }
+            ]
+        },
+        {
+            "name": "Находка",
+            "type": "reward",
+            "description": "Кто-то обронил кошель с монетами.",
+            "fatigue_cost": 5,
+            "rewards": {"gold": 25}
+        }
+    ],
+    "capital_medium_events": [
+         {
+            "name": "Патруль скелетов",
+            "type": "chain",
+            "fatigue_cost": 25,
+            "scenes": [
+                {
+                    "type": "battle",
+                    "text": "Скелеты выбрались из катакомб!",
+                    "enemy": "skeleton"
+                },
+                {
+                    "type": "reward",
+                    "text": "Вы очистили улицу от нежити.",
+                    "rewards": {"experience": 100, "gold": 60}
+                }
+            ]
+        }
+    ]
+}

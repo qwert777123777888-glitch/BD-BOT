@@ -1,0 +1,8 @@
+{
+    "first_steps": {
+        "name": "Первые шаги",
+        "description": "Убейте 2 волков в лесу, чтобы доказать свою силу.",
+        "objectives": {"wolf": 2},
+        "rewards": {"experience": 50, "gold": 20}
+    }
+}

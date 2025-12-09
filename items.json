@@ -1,0 +1,86 @@
+{
+    "health_potion_small": {
+        "name": "Малое зелье лечения",
+        "description": "Восстанавливает 50 HP.",
+        "type": "consumable",
+        "price": 15,
+        "stats": {"health": 50}
+    },
+    "strength_potion": {
+        "name": "Зелье Силы",
+        "description": "Дает +5 к атаке на 1 бой.",
+        "type": "consumable",
+        "price": 25,
+        "buffs": {"attack": 5, "duration": 1}
+    },
+    "greater_strength_potion": {
+        "name": "Великое Зелье Силы",
+        "description": "Дает +5 к атаке на 5 боев.",
+        "type": "consumable",
+        "price": 100,
+        "buffs": {"attack": 5, "duration": 5}
+    },
+    "defense_potion": {
+        "name": "Зелье Защиты",
+        "description": "Дает +5 к защите на 1 бой.",
+        "type": "consumable",
+        "price": 25,
+        "buffs": {"defense": 5, "duration": 1}
+    },
+    "wooden_shield": {
+        "name": "Деревянный щит",
+        "description": "Простой щит.",
+        "type": "artifact",
+        "price": 30,
+        "stats": {"defense": 5}
+    },
+    "steel_sword": {
+        "name": "Стальной меч",
+        "description": "Острое лезвие.",
+        "type": "artifact",
+        "price": 100,
+        "stats": {"attack": 10}
+    },
+    "magic_staff": {
+        "name": "Посох ученика",
+        "description": "Искрится энергией.",
+        "type": "artifact",
+        "price": 120,
+        "stats": {"attack": 15}
+    },
+    "plate_armor": {
+        "name": "Латы рыцаря",
+        "description": "Тяжелая броня.",
+        "type": "artifact",
+        "price": 250,
+        "stats": {"defense": 15}
+    },
+    "vampire_ring": {
+        "name": "Кольцо Вампира",
+        "description": "Древнее кольцо, пульсирующее жаждой крови.",
+        "type": "artifact",
+        "price": 500,
+        "stats": {"attack": 5}
+    },
+    "titan_hammer": {
+        "name": "Молот Титана",
+        "description": "Тяжелый молот, способный сотрясать землю.",
+        "type": "artifact",
+        "price": 800,
+        "stats": {"attack": 30}
+    },
+    "paladin_shield": {
+        "name": "Щит Паладина",
+        "description": "Светится святым светом.",
+        "type": "artifact",
+        "price": 600,
+        "stats": {"defense": 25}
+    },
+    "royal_amulet": {
+        "name": "Королевский Амулет",
+        "description": "Знак героя.",
+        "type": "artifact",
+        "price": 1000,
+        "stats": {"health": 100, "attack": 5, "defense": 5}
+    }
+}

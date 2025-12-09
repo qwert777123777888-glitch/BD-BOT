@@ -1,0 +1,32 @@
+{
+    "warrior": {
+        "name": "Воин",
+        "description": "Мастер ближнего боя, полагающийся на силу и выносливость.",
+        "image": "https://i.imgur.com/v7O3u5p.png",
+        "base_stats": {"health": 150, "attack": 15, "defense": 10},
+        "starting_abilities": ["Мощный удар", "Блок щитом"],
+        "unlocks": {
+            "5": ["Раскол земли"]
+        }
+    },
+    "mage": {
+        "name": "Маг",
+        "description": "Использует заклинания для нанесения огромного урона, но слаб здоровьем.",
+        "image": "https://i.imgur.com/2eQp2x1.png",
+        "base_stats": {"health": 80, "attack": 25, "defense": 3},
+        "starting_abilities": ["Огненный шар", "Ледяная стрела"],
+        "unlocks": {
+            "5": ["Инферно"]
+        }
+    },
+    "rogue": {
+        "name": "Плут",
+        "description": "Ловкий и быстрый, наносит критические удары из тени.",
+        "image": "https://i.imgur.com/9g5fHn8.png",
+        "base_stats": {"health": 100, "attack": 20, "defense": 5},
+        "starting_abilities": ["Удар в спину", "Ядовитый клинок"],
+        "unlocks": {
+            "5": ["Танец теней"]
+        }
+    }
+}
